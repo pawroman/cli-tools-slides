@@ -74,7 +74,8 @@ Web: https://github.com/aziz/tmuxinator
 --heading Shell aliases -- recommendations
 
 --beginoutput
-    - Python project - command to cd and activate virtualenv
+    - a command to cd and activate virtualenv
+        alias tag="cd ~/git/tagasauris/ && . .env/bin/activate && cd app/tagasauris"
     - :q="exit"     -> for vim maniacs :D
     - G="| grep"    -> $ command G text
     - L="| less -R"
@@ -183,7 +184,7 @@ $ grin -i IgnoReCase
 
 $ grin -I "*py" print
 
-$ grind -C 5 "context"
+$ grin -C 5 "context"
 
 $ grin -C5 "context" --force-color L     # alias L="less -R"
 --endoutput
