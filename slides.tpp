@@ -12,6 +12,7 @@
 
 --beginoutput
 * I have:
+*   WIN-TAB      - show yakuake (I like win key)
 *   CTRL-SHIFT-N - new tab
 *   CTRL-SHIFT-L - split vertically
 *   CTRL-SHIFT-T - split horizontally
@@ -67,7 +68,8 @@ Web: https://github.com/aziz/tmuxinator
 * Just put
     alias cmd="long command path && cat something && sudo blah blah"
   in your .bashrc or .zshrc
-* But it's not only commands, it's shell substitution
+* But it's not only commands, it's shell substitution (global alias)
+    alias -g L="| less"
 * List aliases by typing "alias"
 
 --newpage aliases_recommendations
@@ -75,15 +77,17 @@ Web: https://github.com/aziz/tmuxinator
 
 --beginoutput
     - a command to cd and activate virtualenv
-        alias tag="cd ~/git/tagasauris/ && . .env/bin/activate && cd app/tagasauris"
+      alias tag="cd ~/git/tagasauris/ && . .env/bin/activate && cd app/tagasauris"
+
     - :q="exit"     -> for vim maniacs :D
-    - G="| grep"    -> $ command G text
-    - L="| less -R"
+    - -g G="| grep"    -> $ command G text
+    - -g L="| less -R"
+
     - df="df -h"
     - du="du -h"
+
     - grep="grep --color=auto"
     - ls="ls --color=auto -F --group-directories-first -v -h"
-    - ...
 --endoutput
 
 --newpage storm
